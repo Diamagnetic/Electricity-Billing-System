@@ -78,8 +78,12 @@ function LogInPage() {
                           placeholder="Email"
                           name="email"
                           value={user.email}
+                        
                         />
                       </div>
+                      
+                        
+                      
                       <div className="mb-3">
                         <input
                           onChange={handleChange}

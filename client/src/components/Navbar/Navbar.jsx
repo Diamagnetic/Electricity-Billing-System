@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar(props) {
   let history = useHistory();
@@ -106,8 +108,8 @@ function Navbar(props) {
               )}
             </li>
             <li className="nav-item">
-              <button onClick={logout} className="nav-link btn">
-                Logout
+            <button onClick={logout} className="nav-link btn">
+                <FontAwesomeIcon icon={faSignOutAlt} /> Logout
               </button>
             </li>
           </ul>

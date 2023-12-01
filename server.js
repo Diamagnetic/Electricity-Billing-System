@@ -9,5 +9,5 @@ if (port == null || port == "") {
 const server = http.createServer(app);
 
 server.listen(port, () => {
-  console.log("Server started Sucessfully");
+  console.log("Server started Sucessfully on port", port);
 });
